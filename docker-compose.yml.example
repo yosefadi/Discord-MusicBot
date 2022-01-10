@@ -20,6 +20,8 @@ services:
     restart: unless-stopped
     networks:
       - lavalink-net
+    ports:
+      - "127.0.0.1:1304:1304"
     volumes:
       - ./application.yml:/opt/Lavalink/application.yml:ro
 
